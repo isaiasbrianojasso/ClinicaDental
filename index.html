@@ -6,8 +6,21 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <script src="https://js.hereapi.cn/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.hereapi.cn/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=614389485701240&autoLogAppEvents=1"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -47,41 +60,156 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card text-left rounded">
+                                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                                <div class="card-body rounded">
+                                    <h4 class="card-title text-primary">Mejor Servicio</h4>
+                                    <p class="card-text"> Los tratamientos de ortodoncia de Clínica Balut, te permitirán
+                                        sentir mayor confort y
+                                        menos
+                                        dolor mientras tus dientes se encuentran protegidos y alineados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   CARDS TEXTO SERVICIOS-->
+
+                        <div class="col-6">
+                            <div class="card text-left rounded">
+                                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                                <div class="card-body rounded">
+                                    <h4 class="card-title text-primary">Mejores Tratamientos</h4>
+                                    <p class="card-text"> Ofrecemos tratamientos de ortodoncia invisible, brackets
+                                        estéticos y diferentes opciones
+                                        que se
+                                        acoplan a las necesidades del caso de cada paciente. El mejorar tu salud oral te
+                                        brinda
+                                        la confianza
+                                        de volver a sonreír y conocerás que hacerte un tratamiento de ortodoncia te dará
+                                        una
+                                        gran inversión
+                                        a futuro.
+
+                                        En varios lugares pueden alinearte los dientes sin ningún problema pero no en
+                                        todos
+                                        verifican las
+                                        condiciones de las raíces de estos para que no se enchuequen de nuevo. La cita
+                                        de
+                                        valoración es algo
+                                        fundamental para que nuestro equipo de especialistas pueda determinar qué
+                                        tratamiento de
+                                        ortodoncia
+                                        es el indicado para tu caso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   JUMBO AGENDA TU CITA-->
+                        <div class="col-12">
+                            <div style="text-align: center;">
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container">
+                                        <h1 class="display-3">Te interesa?</h1>
+                                        <p class="lead"> ¡Agenda tu cita GRATIS y te platicaremos más al respecto!
+                                        </p>
+                                        <hr class="my-2">
+                                        <p class="lead">
+                                            <a class="btn btn-primary btn-lg" href="Jumbo action link"
+                                                role="button">Agenda Tu Cita</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARDS INFORMACION RELEVANTE-->
+
+                        <div class="card-group rounded">
+                            <div class="card rounded">
+                                <img class="card-img-top rounded"
+                                    src="/assets/img/51962238_320838801874799_5237366924144279552_n.jpg" alt="">
+                                <div class="card-body rounded">
+                                    <h4 class="card-title rounded">Tipos de brackets estéticos y sus características
+                                    </h4>
+                                    <p class="card-text rounded">Hoy en día hay muchas opciones para tratar pacientes y
+                                        diferentes alternativas para alinear los dientes. Existen diferentes tipos de
+                                        brackets ...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card rounded">
+                                <img class="card-img-top rounded"
+                                    src="assets/img/53709952_331847854107227_126583311962210304_n.jpg" alt="">
+                                <div class="card-body rounded">
+                                    <h4 class="card-title rounded">Brackets de autoligado del Sistema Damon, más allá de
+                                        la
+                                        moda.
+                                    </h4>
+                                    <p class="card-text rounded">Actualmente los tratamientos de ortodoncia son muy
+                                        variados y
+                                        la tecnología ha avanzado tanto que existen alternativas médicas para ...
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card rounded">
+                                <img class="card-img-top rounded"
+                                    src="assets/img/55502518_333473040611375_987938307390308352_n.jpg" alt="">
+                                <div class="card-body rounded">
+                                    <h4 class="card-title rounded">Brackets de autoligado del Sistema Damon, más allá de
+                                        la
+                                        moda.
+                                    </h4>
+                                    <p class="card-text rounded">Actualmente los tratamientos de ortodoncia son muy
+                                        variados y
+                                        la tecnología ha avanzado tanto que existen alternativas médicas para ...
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+                <!--
             <div class="carousel slide mt-5 rounded" data-ride="carousel" data-interval="3500">
                 <div class="carousel-inner rounded">
-                    <div class="card-text">
-                        <h2 class="text-secondary mr-auto ml-auto">
-                            <p class="text-primary"> En Clinica Coral</p> Estamos comprometidos con las sonrisas de
-                            todos nuestros pacientes niños, adolescentes y adultos.
-                        </h2>
-                    </div>
-                    <div class="carousel-item active rounded">
+               
+                     <div class="carousel-item active rounded">
                         <img class="w-100 rounded"
                             src="assets/img/56600977_340798256545520_8983084301864140800_n.jpg"></img>
-                    </div>
-                    <div class="carousel-item rounded">
-                        <img class="w-100 rounded"
+                            </div>
+                                <div class="carousel-item rounded">
+                             <img class="w-100 rounded"
                             src="assets/img/56459509_340792966546049_6935758410738565120_n.jpg"></img>
-                    </div>
-                    <div class="carousel-item rounded">
-                        <img class="w-100 rounded"
+                            </div>
+                            <div class="carousel-item rounded">
+                             <img class="w-100 rounded"
                             src="assets/img/56347765_340792793212733_8262976783503065088_n.jpg"></img>
-                    </div>
-                </div>
-                <a data-slide="prev" href="#carrusel" class="carousel-control-prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <a data-slide="next" href="#carrusel" class="carousel-control-next">
+                            </div>
+                        </div>
+                        <a data-slide="prev" href="#carrusel" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <a data-slide="next" href="#carrusel" class="carousel-control-next">
                         <span class="carousel-control-next-icon"></span>
-                    </a>
+                        </a>
+                         </div>
+          
+
+                    -->
+
             </div>
-            <div class="col-4-md">
-                <h1>Recomendaciones</h1>
-                <div class="fb-comments"
-                    data-href="https://www.facebook.com/pg/medicacoral/reviews/?referrer=page_recommendations_see_all&amp;ref=page_internal"
-                    data-numposts="10"></div>
-            </div>
+
+
         </div>
+   
         </div>
     </main>
 
@@ -99,9 +227,149 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="container-fluid">
-                        <div style="width: 640; height: 480px" id="mapContainer"></div>
-                    </div>
+                    probando mapas
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalprivacidad" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso de Privacidad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">
+                        Clínica Balut
+                        DR. NASIB BALUT CHAHIN
+                        AVISOS DE PRIVACIDAD PACIENTES (EX PACIENTES, ACTUALES Y NUEVOS)
+                        El Doctor Nasib Balut Chahin, a través del Consultorio Dental (en adelante el Consultorio), con
+                        domicilio en Pafnuncio Padilla, Número 13, Consultorios 201-202, Circuito Satélite, Ciudad
+                        Satélite, en Naucalpan, Estado de México, Código Postal 53100, para efectos de lo previsto en la
+                        Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su Reglamento,
+                        le informa que necesitamos recabar y utilizar sus siguientes datos:
+
+                        Datos Personales: Requerimos conocer los siguientes datos de paciente, así como de su padre o
+                        tutor, o bien, acompañante en casos de personas adultas con alguna discapacidad, en los casos
+                        que sea aplicable, nombre, teléfono, celular, edad, domicilio, correo electrónico, datos de
+                        facturación, número de cuenta bancaria.
+
+                        Datos Sensibles: Datos encaminados a conocer su estado de salud actual (son los datos contenidos
+                        en el documento denominado “Historia General del Paciente”, así como en los exámenes y
+                        radiografías que le sean solicitados con motivo del tratamiento que le resulte aplicable. Dichos
+                        datos serán utilizados para llevar a cabo las siguientes actividades:
+
+                        Agendar Consultas y Contacto: Requeriremos su nombre y teléfono, a fin de concretar sus visitas
+                        al Consultorio, así como atender alguna duda que pudiera llegarle a surgir vía telefónica.
+
+                        Diagnóstico: A efecto de emitir un diagnóstico dental, requerimos que nos proporcione su nombre,
+                        dirección, ocupación, edad, así como información sobre su estado de salud al momento de la
+                        consulta médica.
+
+                        Apertura de expediente médico: Resulta indispensable que utilicemos sus datos de salud
+                        previamente descritos, financieros y patrimoniales (costo del tratamiento), así como de contacto
+                        para que preparemos su expediente médico, en caso de que reciba alguno de nuestros tratamientos
+                        dentales.
+
+                        Tratamiento Dental: Haremos uso de la información relativa a su salud para encontrarnos en
+                        posibilidades de brindar el tratamiento médico dental adecuado a sus necesidades. También
+                        podremos utilizar sus datos personales como nombre e información relativa a su estado de salud,
+                        para emitir las recetas médicas correspondientes.
+
+                        Seguimiento Médico. Utilizaremos sus datos personales como nombre y teléfono y mensajes de texto
+                        en cualquier modalidad, así como sensibles relativos a salud, con la finalidad de dar
+                        seguimiento al tratamiento dental que le practicamos.
+
+                        Datos de contacto de Padre o Tutor o Acompañante de personas mayores: En caso de que el paciente
+                        sea menor de edad o mayor de edad con alguna discapacidad, requeriremos datos de contacto de su
+                        padre, tutor o acompañante, según sea el caso, para encontrarnos en posibilidad de realizar el
+                        tratamiento dental solicitado.
+
+                        Así como para las siguientes finalidades secundarias:
+
+                        Actividades Académicas y Profesionales; Podremos exponer su caso clínico en pláticas, clases,
+                        publicaciones dentales, tanto en México como en el extranjero, así como fotografías que
+                        documenten su progreso (fotografías de cara y sonrisa perfil inicio y fin del tratamiento, y
+                        radiografías). Si no está de acuerdo con dicho tratamiento de sus datos, por favor indique con
+                        una x la siguiente línea: __.
+
+                        Redes Sociales y Consultorio: Podremos exponer fotografías de cara y sonrisa, y radiografías del
+                        progreso de su tratamiento dental, en nuestro consultorio y redes sociales. En caso de que no
+                        este de acuerdo con dicho tratamiento de sus datos, indique con una x la siguiente línea: __.
+
+                        El Consultorio realiza el tratamiento de dichos datos atendiendo a los principios de licitud,
+                        consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad en
+                        términos de lo dispuesto en la Legislación.
+
+                        Utilizamos procedimientos físicos, tecnológicos y administrativos apropiados para proteger los
+                        datos que nos proporciona, los cuales son guardados en bases de datos controladas con acceso
+                        limitado de conformidad con lo previsto en la Legislación. En caso de que quisiera consultarnos
+                        alguna duda relativa a nuestras medidas de seguridad, por favor no dude en contactarnos al
+                        correo electrónico nbalut@prodigy.net.mx o contacto@clinicabalut.com.
+
+                        Nos abstendremos de vender, transferir, arrendar o alquilar sus datos personales a terceros,
+                        únicamente podríamos llegar a compartir sus datos personales con:
+
+                        a) Proveedores que nos apoyan en el cumplimiento de obligaciones en materia fiscal, así como en
+                        la operación propia del Consultorio;
+
+                        b) En el supuesto de que su caso dental lo llegara a requerir, podríamos compartir sus datos
+                        personales y sensibles de salud con otros especialistas;
+
+                        c) En los casos en los que así lo haya consentido, con las instituciones que vayan a publicar su
+                        caso dental.
+
+                        Si llegara a tener algún comentario o inquietud relativo a dichas transferencias, por favor no
+                        dude en contactarnos al correo electrónico nbalut@prodigy.net.mx o contacto@clinicabalut.com.
+
+                        El Consultorio, le informa que podrá ejercer sus derechos de Acceso, Rectificación, Cancelación
+                        y Oposición (también conocidos como derechos ARCO), mediante un formulario que podrá solicitar
+                        en nuestro domicilio.
+
+                        Dicho formulario deberá de ser presentado en nuestro domicilio, resultando indispensable
+                        acredite ser el titular de los datos personales, o su representante legal, por medio de original
+                        y copia de identificación oficial con fotografía, y en su caso, poder en el cual se confieren
+                        facultades de representación del titular de los datos, para realizar dicha solicitud en su
+                        representación.
+
+                        El Consultorio, hace de su conocimiento que podrá Revocar en cualquier momento el consentimiento
+                        que nos ha otorgado para que utilicemos sus datos personales para llevar a cabo las finalidades
+                        antes descritas, con el objeto de que dejemos de hacer uso de éstos, previa solicitud a nuestro
+                        departamento de protección de datos personales al domicilio previamente señalado, atendiendo a
+                        las formalidades contenidas en el párrafo inmediato anterior.
+
+                        Nos comprometemos a darle respuesta en un plazo máximo de 20 días hábiles contados a partir del
+                        día que recibimos su solicitud, misma que pondremos a su disposición en nuestro domicilio previa
+                        acreditación de su identidad. Si solicita acceso a sus datos personales, la reproducción de
+                        éstos se llevará a cabo a través de copias simples, archivo electrónico, o bien podrá
+                        consultarlos en sitio. En caso de solicitar su derecho de Rectificación, su solicitud deberá ir
+                        acompañada de la documentación que ampara la procedencia de lo solicitado.
+
+                        Si desea consultar alguna inquietud que pudiera surgir sobre dichos procesos, no dude en
+                        contactar a nuestro departamento de protección de datos personales al correo electrónico
+                        nbalut@prodigy.net.mx o contacto@clinicabalut.com.
+
+                        En caso de que modificáramos el presente aviso de privacidad, lo haremos de su conocimiento en
+                        nuestro domicilio con razonable antelación a su puesta en práctica.
+
+                        Si usted tiene alguna duda sobre el presente aviso de privacidad, no dude en dirigirla a nuestro
+                        departamento de protección de datos personales a la dirección de correo electrónica previamente
+                        indicada.
+
+                        Al llenar el formulario manifiesto mi consentimiento para el uso, resguardo, tratamiento y
+                        transferencia de mis datos personales, sensibles y financieros y patrimoniales, de conformidad
+                        con lo previsto en el presente aviso.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -115,30 +383,11 @@
 
 
 
-
-
-    <footer class="card-footer fixed-bottom text-secondary" style="filter: blur(1px);
--webkit-filter: blur(1px);">
+    <footer class="card-footer fixed-bottom text-secondary" > <a class="text-primary" data-toggle="modal" data-target="#modalprivacidad">Anuncio de Privacidad</a>
         Clinica Coral Ubicada en Av Coral 1021, Las Joyas 78399 San Luis Potosí City Dev: Isaias Briano
     </footer>
-    <script>
-        // Initialize the platform object:
-        var platform = new H.service.Platform({
-            'app_id': '1PCA1dmRt2pEVaD1CQjY',
-            'app_code': 'HiK-t0zxPPcszH_7JmxbUg'
-        });
-        // Obtain the default map types from the platform object
-        var maptypes = platform.createDefaultLayers();
-
-        // Instantiate (and display) a map object:
-        var map = new H.Map(
-            document.getElementById('mapContainer'),
-            maptypes.normal.map,
-            {
-                zoom: 40,
-                center: { lat: 52.5, lng: 13.4 }
-            });
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG93TAtz1cmI9bm0EWWo2rJCW6sOmS5Sg&callback=initMap"
+        async defer></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -150,6 +399,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+    <!-- WhatsApp -->
+    <div id="btn-wa">
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=525570726891&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Balut"><i
+                class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <div class="wave"></div>
+        <div class="wave2"></div>
 
 </body>
 
