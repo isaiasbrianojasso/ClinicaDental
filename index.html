@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es_LA">
 
 <head>
     <title>Clinica Dental Coral</title>
@@ -23,17 +23,40 @@
         <div id="EjNavbar" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-item "><a href="/" class="nav-link text-secondary">Inicio</a></li>
-                <li class="navbar-item "><a href="tratamientos.html" class="nav-link text-secondary">Tratamientos</a></li>
-                <li class="navbar-item "><a href="casos.html" class="nav-link text-secondary">Casos de Exito</a></li>
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Tratamientos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Casos de Exito</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
                 <li class="navbar-item "><a data-toggle="modal" data-target="#modelId"
                         class="nav-link text-secondary">Ubicanos</a></li>
                 <li class="navbar-item "><a href="acercade.hml" class="nav-link text-secondary">Acerca de</a></li>
             </ul>
         </div>
     </nav>
+
+
+
+
+
 </header>
-<body>    
+
+<body>
     <main>
         <div class="container">
             <div class="row">
@@ -98,7 +121,8 @@
                                         </p>
                                         <hr class="my-2">
                                         <p class="lead">
-                                            <img style="height:40px; width:40px;" src="assets/img/whatsapp.png" alt="whatsapp">
+                                            <img style="height:40px; width:40px;" src="assets/img/whatsapp.png"
+                                                alt="whatsapp">
                                             <a class="btn btn-primary btn-lg" href="https://api.whatsapp.com/send?phone=524441400858&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Coral
                                             " role="button">Agenda Tu Cita</a>
                                         </p>
@@ -393,7 +417,7 @@
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG93TAtz1cmI9bm0EWWo2rJCW6sOmS5Sg&callback=initMap"
         async defer></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
