@@ -6,6 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="/css/main.css">
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=614389485701240&autoLogAppEvents=1"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -113,17 +114,17 @@
                         </div>
                         <!--   JUMBO AGENDA TU CITA-->
                         <div class="col-12">
-                            <div style="text-align: center;">
-                                <div class="jumbotron jumbotron-fluid">
+                            <div style=" text-align:  center;">
+                                <div style=" background-color:#7DCCF4;" class="jumbotron jumbotron-fluid">
                                     <div class="container">
-                                        <h1 class="display-3">Te interesa?</h1>
+                                        <h1 class="display-3 text-light">TE INTERESA ?</h1>
                                         <p class="lead"> ¡Agenda tu cita GRATIS y te platicaremos más al respecto!
                                         </p>
                                         <hr class="my-2">
                                         <p class="lead">
                                             <img style="height:40px; width:40px;" src="assets/img/whatsapp.png"
                                                 alt="whatsapp">
-                                            <a class="btn btn-primary btn-lg" href="https://api.whatsapp.com/send?phone=524441400858&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Coral
+                                            <a class="btn btn-info btn-lg" href="https://api.whatsapp.com/send?phone=524441400858&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Coral
                                             " role="button">Agenda Tu Cita</a>
                                         </p>
                                     </div>
@@ -250,8 +251,8 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade rounded" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog rounded" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Ubicanos en</h5>
@@ -265,7 +266,9 @@
                         </p>
                     </div>
                     <img class=""
-                        src=" https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&amp;zoom=13&amp;size=400x200&amp;maptype=roadmap&#10;        &amp;markers=color:blue%7Clabel:S%7C40.702147,-74.015794&amp;markers=color:green%7Clabel:G%7C40.711614,-74.012318&#10;        &amp;markers=color:red%7Clabel:C%7C40.718217,-73.998284&#10;        &amp;key=AIzaSyAQBADquhIMYBqwjVX0SIS6Pu76hPYHfq0"
+                        src=" https://maps.googleapis.com/maps/api/staticmap?center=Av Coral 1021, Las Joyas, 78399 San Luis Potosí City
+
+                        &amp;zoom=13&amp;size=400x200&amp;maptype=roadmap&#10;        &amp;markers=color:blue%7Clabel:S%7C40.702147,-74.015794&amp;markers=color:green%7Clabel:G%7C40.711614,-74.012318&#10;        &amp;markers=color:red%7Clabel:C%7C40.718217,-73.998284&#10;        &amp;key=AIzaSyAQBADquhIMYBqwjVX0SIS6Pu76hPYHfq0"
                         alt="">
                 </div>
                 <div class="modal-footer">
@@ -280,7 +283,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="modalprivacidad" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+    <div class="modal fade rounded" id="modalprivacidad" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -290,7 +293,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body rounded">
                     <p class="card-text">
                         Clínica Balut
                         DR. NASIB BALUT CHAHIN
@@ -420,9 +423,9 @@
         </div>
     </div>
 
-    <footer class="card-footer fixed-bottom text-secondary"> <a class="text-primary" data-toggle="modal"
+    <footer class="card-footer fixed-bottom text-secondary">         Clinica Coral Ubicada en Av Coral 1021, Las Joyas 78399 San Luis Potosí City Dev: Isaias Briano
+            <a class="text-primary" data-toggle="modal"
             data-target="#modalprivacidad">Anuncio de Privacidad</a>
-        Clinica Coral Ubicada en Av Coral 1021, Las Joyas 78399 San Luis Potosí City Dev: Isaias Briano
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG93TAtz1cmI9bm0EWWo2rJCW6sOmS5Sg&callback=initMap"
         async defer></script>
