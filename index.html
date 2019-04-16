@@ -7,6 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=614389485701240&autoLogAppEvents=1"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -15,13 +18,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <header>
-    <nav style="opacity: 0.9;" class="navbar  rounded navbar-expand-md bg-light   fixed-top navbar-dark shadow-lg">
+    <nav style="opacity: 0.9;" class="navbar rounded navbar-expand-md bg-light   fixed-top navbar-dark shadow-lg">
         <img class="w-10" src="assets/img/logo.png" style="width:50px;" alt="logotipo">
         <a class="navbar-brand text-secondary" href="#">Clinica Coral</a>
         <button data-target="#EjNavbar" type="button" data-toggle="collapse" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="EjNavbar" class="collapse navbar-collapse">
+        <div id="EjNavbar " class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-item "><a href="/" class="nav-link text-secondary">Inicio</a></li>
                 <li class="nav-item dropdown">
@@ -50,11 +53,6 @@
             </ul>
         </div>
     </nav>
-
-
-
-
-
 </header>
 
 <body>
@@ -68,12 +66,29 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>-->
-                <div class="card  mt-3">
-                        <img class="card-img-top" src="holder.js/100px180/" alt="">
-                        <div class="card-body">
-                            <div class="carousel slide mt-5 " data-ride="carousel" data-interval="1500">
-                                <div class="carousel-inner ">
 
+            <div class="carousel slide rounded   mt-5 " data-ride="carousel" data-interval="900">
+                <div class="carousel-inner rounded ">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="assets/img/56600977_340798256545520_8983084301864140800_n.jpg"></img>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="assets/img/56459509_340792966546049_6935758410738565120_n.jpg"></img>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="assets/img/56347765_340792793212733_8262976783503065088_n.jpg"></img>
+                    </div>
+                </div>
+                <a data-slide="prev" href="#carrusel" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <a data-slide="next" href="#carrusel" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+            </div>
+            <!--  <div class="card">
+                        <div class="card-body">
+                            <div class="carousel border border-outline-warning slide mt-5 " data-ride="carousel" data-interval="1500">
+                                <div class="carousel-inner ">
                                     <div class="carousel-item active ">
                                         <img class="w-100 "
                                             src="assets/img/56600977_340798256545520_8983084301864140800_n.jpg"></img>
@@ -93,126 +108,141 @@
                                         <span class="carousel-control-next-icon"></span>
                                     </a>
                             </div>
-                        </div>                        </div>
+                        </div>                        </div> -->
 
-                        <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card text-left  rounded">
-                                <img class="card-img-top" src="holder.js/100px180/" alt="">
-                                <div class="card-body rounded">
-                                        <img class="w-10" src="assets/img/logo.png" style="width:50px;" alt="logotipo">
-                                        <h4 class="card-title text-primary">Mejor Servicio</h4>
-                                    <p class="card-text"> Los tratamientos de ortodoncia de Clínica Coral, te permitirán
-                                        sentir mayor confort y
-                                        menos
-                                        dolor mientras tus dientes se encuentran protegidos y alineados.</p>
-                                </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card text-left mt-2  rounded">
+                            <div class="card-body rounded">
+                                <img class="w-10" src="assets/img/logo.png" style="width:50px;" alt="logotipo">
+                                <h4 class="card-title text-primary">Mejor Servicio</h4>
+                                <p class="card-text"> Los tratamientos de ortodoncia de Clínica Coral, te permitirán
+                                    sentir mayor confort y
+                                    menos
+                                    dolor mientras tus dientes se encuentran protegidos y alineados.</p>
                             </div>
                         </div>
-                        <!--   CARDS TEXTO SERVICIOS-->
+                    </div>
+                    <!--   CARDS TEXTO SERVICIOS-->
 
-                        <div class="col-6">
-                            <div class="card text-left   rounded">
-                                <img class="card-img-top" src="holder.js/100px180/" alt="">
-                                <div class="card-body rounded">
-                                        <img class="w-10" src="assets/img/logo.png" style="width:50px;" alt="logotipo">
+                    <div class="col-6">
+                        <div class="card text-left  mt-2  rounded">
+                            <div class="card-body rounded">
+                                <img class="w-10" src="assets/img/logo.png" style="width:50px;" alt="logotipo">
 
-                                    <h4 class="card-title text-primary">Mejores Tratamientos</h4>
-                                    <p class="card-text text-align"> Ofrecemos tratamientos de ortodoncia invisible, brackets
-                                        estéticos y diferentes opciones que se acoplan a las necesidades del caso de cada paciente.<br> 
-                                        El mejorar tu salud oral te brinda la confianza de volver a sonreír y conocerás que hacerte un tratamiento de ortodoncia te dará
-                                        una gran inversión a futuro.<br>
+                                <h4 class="card-title text-primary">Mejores Tratamientos</h4>
+                                <p class="card-text text-align"> Ofrecemos tratamientos de ortodoncia invisible,
+                                    brackets
+                                    estéticos y diferentes opciones que se acoplan a las necesidades del caso de cada
+                                    paciente.<br>
+                                    El mejorar tu salud oral te brinda la confianza de volver a sonreír y conocerás que
+                                    hacerte un tratamiento de ortodoncia te dará
+                                    una gran inversión a futuro.<br>
 
-                                        En varios lugares pueden alinearte los dientes sin ningún problema pero no en
-                                        todos
-                                        verifican las
-                                        condiciones de las raíces de estos para que no se enchuequen de nuevo. La cita
-                                        de
-                                        valoración es algo
-                                        fundamental para que nuestro equipo de especialistas pueda determinar qué
-                                        tratamiento de
-                                        ortodoncia
-                                        es el indicado para tu caso.</p>
-                                </div>
+                                    En varios lugares pueden alinearte los dientes sin ningún problema pero no en
+                                    todos
+                                    verifican las
+                                    condiciones de las raíces de estos para que no se enchuequen de nuevo. La cita
+                                    de
+                                    valoración es algo
+                                    fundamental para que nuestro equipo de especialistas pueda determinar qué
+                                    tratamiento de
+                                    ortodoncia
+                                    es el indicado para tu caso.</p>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- CARDS INFORMACION RELEVANTE-->
-                        <h1 class="text-info">Nuestros Casos de éxito</h1>
-                        <div class="card-group rounded">
-                            <div class="card rounded">
-                                <img class="card-img-top rounded"
-                                    src="/assets/img/51962238_320838801874799_5237366924144279552_n.jpg" alt="">
-                                <div class="card-body rounded">
-                                    <h4 class="card-title rounded">Tipos de brackets estéticos y sus características
-                                    </h4>
-                                    <p class="card-text rounded">Hoy en día hay muchas opciones para tratar pacientes y
-                                        diferentes alternativas para alinear los dientes. Existen diferentes tipos de
-                                        brackets ...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card rounded">
-                                <img class="card-img-top rounded"
-                                    src="assets/img/53709952_331847854107227_126583311962210304_n.jpg" alt="">
-                                <div class="card-body rounded">
-                                    <h4 class="card-title rounded">Brackets de autoligado del Sistema Damon, más allá de
-                                        la
-                                        moda.
-                                    </h4>
-                                    <p class="card-text rounded">Actualmente los tratamientos de ortodoncia son muy
-                                        variados y
-                                        la tecnología ha avanzado tanto que existen alternativas médicas para ...
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card rounded">
-                                <img class="card-img-top rounded"
-                                    src="assets/img/55502518_333473040611375_987938307390308352_n.jpg" alt="">
-                                <div class="card-body rounded">
-                                    <h4 class="card-title rounded">Brackets de autoligado del Sistema Damon, más allá de
-                                        la
-                                        moda.
-                                    </h4>
-                                    <p class="card-text rounded">Actualmente los tratamientos de ortodoncia son muy
-                                        variados y
-                                        la tecnología ha avanzado tanto que existen alternativas médicas para ...
-
-                                    </p>
-                                </div>
+                    <!-- CARDS INFORMACION RELEVANTE-->
+                    <h1 class="text-info"><i class="fas fa-tooth"> Nuestros Casos de éxito </i> </h1>
+                    <div class="card-group rounded">
+                        <div class="card mr-2 rounded">
+                            <img class="card-img-top rounded"
+                                src="/assets/img/51962238_320838801874799_5237366924144279552_n.jpg" alt="">
+                            <div class="card-body rounded">
+                                <h4 class="card-title rounded">Tipos de brackets estéticos y sus características
+                                </h4>
+                                <p class="card-text rounded">Hoy en día hay muchas opciones para tratar pacientes y
+                                    diferentes alternativas para alinear los dientes. Existen diferentes tipos de
+                                    brackets ...
+                                </p>
                             </div>
                         </div>
+                        <div class="card mr-2 rounded">
+                            <img class="card-img-top rounded"
+                                src="assets/img/53709952_331847854107227_126583311962210304_n.jpg" alt="">
+                            <div class="card-body rounded">
+                                <h4 class="card-title rounded">Brackets de autoligado del Sistema Damon, más allá de
+                                    la
+                                    moda.
+                                </h4>
+                                <p class="card-text rounded">Actualmente los tratamientos de ortodoncia son muy
+                                    variados y
+                                    la tecnología ha avanzado tanto que existen alternativas médicas para ...
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card rounded">
+                            <img class="card-img-top rounded"
+                                src="assets/img/55502518_333473040611375_987938307390308352_n.jpg" alt="">
+                            <div class="card-body rounded">
+                                <h4 class="card-title rounded">Brackets de autoligado del Sistema Damon, más allá de
+                                    la
+                                    moda.
+                                </h4>
+                                <p class="card-text rounded">Actualmente los tratamientos de ortodoncia son muy
+                                    variados y
+                                    la tecnología ha avanzado tanto que existen alternativas médicas para ...
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
 
-                        <!--   JUMBO AGENDA TU CITA-->
-                        <div class="col-12 mt-3">
-                                <div style=" text-align:  center;">
-                                    <div style=" background-color:#7DCCF4;" class="jumbotron jumbotron-fluid">
-                                        <div class="container">
-                                            <h1 class="display-3 text-light">TE INTERESA ?</h1>
-                                            <p class="lead text-secondary"> ¡Agenda tu cita GRATIS y te platicaremos más al respecto!
-                                            </p>
-                                            <hr class="my-2">
-                                            <p class="lead">
-                                                <img style="height:40px; width:40px;" src="assets/img/whatsapp.png"
-                                                    alt="whatsapp">
-                                                <a class="btn btn-info btn-lg" href="https://api.whatsapp.com/send?phone=524441400858&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Coral
+                    <!--   JUMBO AGENDA TU CITA-->
+                    <div class="col-12 mt-3">
+                        <div style=" text-align:  center;">
+                            <div style=" background-color:#7DCCF4;" class="jumbotron jumbotron-fluid">
+                                <div class="container">
+                                    <h1 class="display-3 text-light">TE INTERESA ?</h1>
+                                    <p class="lead text-secondary"> ¡Agenda tu cita GRATIS y te platicaremos más al
+                                        respecto!
+                                    </p>
+                                    <hr class="my-2">
+                                    <p class="lead">
+                                        <img style="height:40px; width:40px;" src="assets/img/whatsapp.png"
+                                            alt="whatsapp">
+                                        <a class="btn btn-info btn-lg" href="https://api.whatsapp.com/send?phone=524441400858&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Coral
                                                 " role="button">Agenda Tu Cita</a>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
-                        
                         </div>
-
-
                     </div>
 
                 </div>
-                <!--
+                <div class="col-12-fluid rounded mb-5 bg-info">
+                    <h2 class="text-white ml-5 mr-5">COMO LLEGAR <i class="fas fa-location-arrow"></i></h2>
+                    <iframe class="rounded mb-5 ml-5 mr-5"
+                        src="https://wego.here.com/directions/mix/mylocation/e-eyJuYW1lIjoiT2RvbnRvbG9nXHUwMGVkYSBNXHUwMGU5ZGljYSBDb3JhbCIsImFkZHJlc3MiOiJBdiBDb3JhbCAxMDIxLCBMYXMgSm95YXMsIFNhbiBMdWlzIFBvdG9zXHUwMGVkIENpdHkiLCJsYXRpdHVkZSI6MjIuMTM2NzMwMzk3NDMyLCJsb25naXR1ZGUiOi0xMDAuOTQ1NTgwMDA1NjUsInByb3ZpZGVyTmFtZSI6ImZhY2Vib29rIiwicHJvdmlkZXJJZCI6MTkyMTMzMDg4MDc4NzA1fQ==?map=22.13673,-100.94558,15,normal&fb_locale=es_LA"
+                        width="900" height="400" scrolling="auto">
+
+                        Texto alternativo para navegadores que no aceptan iframes
+
+                    </iframe>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--
             <div class="carousel slide mt-5 rounded" data-ride="carousel" data-interval="3500">
                 <div class="carousel-inner rounded">
                
@@ -239,7 +269,7 @@
 
                     -->
 
-            </div>
+        </div>
 
 
         </div>
@@ -249,9 +279,9 @@
 
 
 
-
     <!-- Modal -->
-    <div class="modal fade rounded" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal fade rounded" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
         <div class="modal-dialog rounded" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -296,9 +326,9 @@
                 <div class="modal-body rounded">
                     <p class="card-text">
                         Clínica Balut
-                        DR. NASIB BALUT CHAHIN
+                        DR. Vladimir Vera
                         AVISOS DE PRIVACIDAD PACIENTES (EX PACIENTES, ACTUALES Y NUEVOS)
-                        El Doctor Nasib Balut Chahin, a través del Consultorio Dental (en adelante el Consultorio), con
+                        El Doctor Vladimir Vera , a través del Consultorio Dental (en adelante el Consultorio), con
                         domicilio en Pafnuncio Padilla, Número 13, Consultorios 201-202, Circuito Satélite, Ciudad
                         Satélite, en Naucalpan, Estado de México, Código Postal 53100, para efectos de lo previsto en la
                         Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su Reglamento,
@@ -416,6 +446,11 @@
                         con lo previsto en el presente aviso.
                     </p>
                 </div>
+
+
+
+
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
@@ -423,9 +458,9 @@
         </div>
     </div>
 
-    <footer class="card-footer fixed-bottom text-secondary">         Clinica Coral Ubicada en Av Coral 1021, Las Joyas 78399 San Luis Potosí City Dev: Isaias Briano
-            <a class="text-primary" data-toggle="modal"
-            data-target="#modalprivacidad">Anuncio de Privacidad</a>
+    <footer class="card-footer fixed-bottom text-secondary"> Clinica Coral Ubicada en Av Coral 1021, Las Joyas 78399 San
+        Luis Potosí City Dev: Isaias Briano
+        <a class="text-primary" data-toggle="modal" data-target="#modalprivacidad">Anuncio de Privacidad</a>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG93TAtz1cmI9bm0EWWo2rJCW6sOmS5Sg&callback=initMap"
         async defer></script>
