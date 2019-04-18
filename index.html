@@ -84,7 +84,7 @@
 
                 <li class="navbar-item "><a data-toggle="modal" data-target="#modelId"
                         class="nav-link text-primary">Ubicanos</a></li>
-              <!--    <li class="navbar-item "><a href="acercade.hml" class="nav-link text-primary">Acerca de</a></li>  --> 
+              <li class="navbar-item "><a data-toggle="modal" data-target="#modalacerca" class="nav-link text-primary">Video</a></li> 
             </ul>
         </div>
     </nav>
@@ -319,7 +319,32 @@
         </div>
     </main>
 
-
+<!--  Modal Acerca de -->
+<!-- Modal acerca -->
+<div class="modal fade" id="modalacerca" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title" class="nav-link text-primary">Video</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+            <div class="modal-body">
+            <h3 class="text-info">Medica Clinica Coral</h3>
+                                <div class="col-6 mt-5">
+                                    <video autoplay class="rounded" width="400" height="200" controls>
+                                        <source src="assets/55866803_126940031708543_4648252069974809709_n.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Modal -->
     <div class="modal fade rounded" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
