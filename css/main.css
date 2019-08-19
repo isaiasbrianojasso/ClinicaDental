@@ -25,7 +25,7 @@ body {
 
 .module-border-wrap {
 
-  background: linear-gradient(to right,#60C9FD, #B80BFD);
+  background: linear-gradient(to right,#60C9FD, #60C9FD);
   padding: 3px;
 }
 
