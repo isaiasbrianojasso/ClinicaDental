@@ -1,4 +1,41 @@
+<?php
+if(isset($_POST['submit']))
+{
+    $nombre=$_POST['nombre'];
+    $correo=$_POST['correo'];
+    $telefono=$_POST['telefono'];
+    $mensaje=$_POST['mensaje'];
 
+    $headers .= 'To: Medico Estomatologo' . "\r\n";
+    $headers .= 'From: Holly Boss' . "\r\n";
+    $headers .= 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    $to  = "contacto@odontologiaclinicacoral.com";
+    $subjects = "Clinica Coral";
+    $messages = '<table border="0" cellpadding="5" cellspacing="5" width="600">
+        <tbody>
+            <tr>
+                <th>Detalles</th>
+            </tr>
+            <tr>
+                <td style="text-align:left" valign="top">
+                <br>
+                <strong>Nombre:</strong> '.$nombre.'<br>
+                <strong>Correo:</strong> '.$correo.'<br><br><hr>
+                <strong>Telefono:</strong>:</strong>'. $telefono.'<br><br>
+                <strong>Mensaje:</strong>'.$mensaje.'<br><br>
+    
+                </td>
+            </tr>
+         
+        </tbody>
+    </table>';
+
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +43,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clinica Medica Dental Coral</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,13 +63,12 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=614389485701240&autoLogAppEvents=1"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -107,7 +142,7 @@
                 </li>
 
                 <!--       <li class="navbar-item "><a href="quienes.html" class="nav-link text-primary">Quienes Somos</a></li>-->
-
+           
                 <li class="navbar-item "><a data-toggle="modal" data-target="#modelId"
                         class="nav-link text-primary">Ubicanos</a></li>
                 <!--  <li class="navbar-item "><a data-toggle="modal" data-target="#modalacerca"
@@ -132,6 +167,8 @@
                                     <a class="color-blue-light-p font-weight-bold" href="mailto:contacto@clinicabalut.com" ><i class="color-blue fa fa-envelope" aria-hidden="true" style="font-size: 33px; padding: 8px 20px;"></i></a>
                                 </div>
                             </div>-->
+                            <!-- Button trigger modal -->
+
                 <div class="col-12 mt-5">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -174,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-
+            
                 <!--  
                     <div class="carousel slide rounded  ml-auto mr-auto" style="width:70%; " data-ride="carousel"
                         data-interval="3000">
@@ -222,6 +259,7 @@
                             </div>
                         </div>
                     </div>
+                  
                 </div>
 
                 <div class="col-6 mt-5 mb-4" style="border-radius: 25px;">
@@ -246,6 +284,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12-md ml-auto mr-auto mb-2 mt-1 rounded">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalpedircotizacion">
+                        Pedir Cotizacion
+                    </button>
+
+                </div>
+
+
             </div>
      <!-- Grid row -->
 <div class="row">
@@ -788,6 +834,47 @@
         </div>
     </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="modalpedircotizacion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title">Escribe tus datos y te cotizaremos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+            <div class="modal-body">
+                <form  method="POST"> 
+                <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                <label for="correo">Correo:</label>
+                <input class="form-control"  type="text" name="correo" id="correo" placeholder="Escribe tu correo">
+                <label for="telefono">Telefono:</label>
+                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Escribe tu Telefono">
+                <label for="mensaje">Mensaje para nosotros</label>
+                <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#exampleModal').on('show.bs.modal', event => {
+        var button = $(event.relatedTarget);
+        var modal = $(this);
+        // Use above variables to manipulate the DOM
+        
+    });
+</script>
       <!-- Modal -->
       <div class="modal fade" id="modalwhatsapp" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
           <div class="modal-dialog modal-xm" role="document">
