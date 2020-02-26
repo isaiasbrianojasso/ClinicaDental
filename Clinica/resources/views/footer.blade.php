@@ -1,118 +1,211 @@
+<footer>
 
-          <!--Footer-->
-          <div class="modal-footer justify-content-center">
-                <span class="mr-4">Spread the word!</span>
-                <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
-                <!--Twitter-->
-                <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
-                <!--Google +-->
-                <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
-                <!--Linkedin-->
-                <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!--/.Content-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="wow fadeInDown" data-wow-delay="0.1s">
+          <div class="widget">
+            <h5>Acerca de Odontología Medica Coral</h5>
+            <p>
 
+            </p>
+          </div>
+        </div>
+        <div class="wow fadeInDown" data-wow-delay="0.1s">
+          <div class="widget">
+            <h5>Informacion</h5>
+            <ul>
+              <li><a href="#">Principal</a></li>
+              <li><a href="#">Testigos</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Terminos y Condiciones</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="wow fadeInDown" data-wow-delay="0.1s">
+          <div class="widget">
+            <h5>Odontología Medica Coral</h5>
+            <p>
+              Especialistas en Ortodoncia egresados de escuela Certificada por AMO. 
+              Asociación Mexicana de Ortodoncia.                </p>
+            <ul>
+              <li>
+                <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+            </span> Lunes - Sabado, 9am to 10pm
+              </li>
+              <li>
+                <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+            </span> 444-140-08-59
+              </li>
+              <li>
+                <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+            </span> ventas@odontologiamedicacoral.com
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="wow fadeInDown" data-wow-delay="0.1s">
+          <div class="widget">
+            <h5>Ubicanos en</h5>
+            <p>Av. Coral 1021 - A dos cuadras del estadio Alfonso lastras.</p>
+
+          </div>
+        </div>
+        <div class="wow fadeInDown" data-wow-delay="0.1s">
+          <div class="widget">
+            <h5>Siguenos</h5>
+            <ul class="company-social">
+              <li class="social-facebook"><a href="https://www.facebook.com/medicacoral/?tn-str=k*F"><i class="fab fa-facebook-square"></i></a></li>
+              <li class="social-twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+              <li class="social-google"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+              <li class="social-vimeo"><a href="#"><i class="fab fa-vimeo-square"></i></a></li>
+              <li class="social-dribble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <!--Modal: Name-->
-
-    <a><img class="img-fluid z-depth-1" src="/assets/img/img/promocion2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal5"></a>
-
   </div>
-  <!-- Grid column -->
 
-  <!-- Grid column -->
-  <div class="col-lg-4 col-md-6 mb-4">
 
-    <!--Modal: Name-->
-    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
 
-        <!--Content-->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalreservar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" style="font-family: 'Indie Flower', cursive;
+">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-
-          <!--Body-->
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="/assets/img/Captura de Pantalla 2019-08-20 a la(s) 0.27.30.png"
-                allowfullscreen></iframe>
+            <div class="modal-header">
+                
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>Cerrar
+                    </button>
             </div>
+        <form action="{{action('CitasController@enviar')}}">
+            @csrf
+            <div class="modal-body">
+              <div class="row" style="margin:20px;">
+                <div class="col-md-6 inline-block">
+                  <label for="nombre">Nombre</label>
+                  <input  class="form-control" type="text" name="nombre" id="nombre" required>
+                  <label for="doctor">Tratamiento</label>      
+                  <select class="form-control" name="tratamiento">
+                      <option  class="form-control" value="Ortodoncia y ortopedia dentomaxilofacial">Ortodoncia y ortopedia dentomaxilofacial</option>
+                      <option class="form-control" value="Odontopediatria">Odontopediatria</option>
+                      <option class="form-control" value="Cirugía de 3eros molares">Cirugía de 3eros molares</option>
+                      <option class="form-control" value="Periodoncia">Periodoncia</option>
+                      <option class="form-control" value="Prótesis y Rehabilitación">Prótesis y Rehabilitación</option>
+                      <option class="form-control" value="Endodoncia">Endodoncia</option>
+                      <option class="form-control" value="Profilaxis dental">Profilaxis dental</option>
+                  </select>
+                  <label for="telefono">Telefono</label>
+                  <input class="form-control" type="number" name="telefono" id="telefono" >
+                </div>
+                <div class="col-md-6">
+                  <label for="date">Fecha</label>
+                  <input class="form-control" type="date" name="date" id="date" required>
+                  <label for="hora">Selecciona una hora por favor</label>
+                  <input type="time" id="timepicker1" name="timepicker1" class="form-control timepicker" required/>
 
+         <label for="email">Email</label>
+         <input class="form-control" type="email" name="emails" id="emails">
           </div>
-
-          <!--Footer-->
-          <div class="modal-footer d-block d-md-flex justify-content-center">
-            <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
-            <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
-            <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
-            <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
-
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-        <!--/.Content-->
-
-      </div>
-    </div>
-    <!--Modal: Name-->
-
-    <a><img class="img-fluid z-depth-1" src="/assets/img/Captura de Pantalla 2019-08-20 a la(s) 0.27.30.png" alt="video"
-        data-toggle="modal" data-target="#modal3"></a>
+</div>
+<div class="md-form">
+  <i class="fas fa-pencil-alt prefix"></i>
+  <label for="notas">Notas Adicionales</label>
+  <textarea id="notas" name="notas" class="md-textarea form-control" rows="3"></textarea>
+</div>
 
   </div>
-  <!-- Grid column -->
-
-</div>
-<!-- Grid row -->
-
-            <div class="col-12 rounded mb-5 mt-1 bg-light">
-                <div class="py-1 text-center bg-light" style="border-radius: 25px;">
-                    <button type="button" class="button  btn-lg shadow-lg  " data-toggle="modal" data-target="#modelId"
-                        style=" bottom:5px;  position: relative; font-size: 24px; padding: 14px 40px; font-family: 'Lato', sans-serif;">Ubicanos</button>
-                </div>
-                <div class="jumbotron jumbotron-fluid  bg-light rounded" style="margin-top: -90px; ">
-                    <iframe class="rounded  bg-light col-12 mt-5 mb-5"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.7199598898615!2d-100.9474134850482!3d22.136650485408794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x618edc7faedcc8cf!2sODONTOLOG%C3%8DA+MEDICA+CORAL!5e0!3m2!1ses!2smx!4v1555734166877!5m2!1ses!2smx"
-                        width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+  <input type="hidden" name="registro" id="registro" value=" {{ date('Y-m-d') }}">
+  <textarea disabled class="md-textarea form-control" rows="3" placeholder="Nota: Al enviar el siguiente formulario no asegura la cita en la fecha/hora escrita esta pasara primero a revision y luego autorizacion se le mandara un mensaje si se confirma o se le puede dar otra hora/dia para la cita."></textarea>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Quisiera una cita</button>
             </div>
-
- <script>
-     $('#exampleModal').on('show.bs.modal', event => {
-         var button = $(event.relatedTarget);
-         var modal = $(this);
-         // Use above variables to manipulate the DOM
-         
-     });
- </script>
-            <!-- WhatsApp -->
-            <a href="https://api.whatsapp.com/send?phone=524441400858&text=Hola,%20quiero%20agendar%20una%20cita%20en%20Clínica%20Coral"
-                class="whatsapp" target="_blank"><img src="/assets/img/Whatsapp.png" width="60" height="60" alt="">
-            </a>
-
-            <a href="https://www.instagram.com/ortodoncia_medicacoral/" class="instagram" target="_blank"><img
-                    src="/assets/img/instagram.png" width="60" height="60" alt="">
-            </a>
-
-            <a href="https://www.facebook.com/medicacoral/" class="facebook" target="_blank"><img
-                    src="/assets/img/facebook.png" width="60" height="60" alt="">
-
-            </a>
-
-
-
         </div>
-    </main>
-    </body>
-</html>
-    @yield('footer')
+    </form>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modallogin" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          <div class="modal-body">
+                      <form method="POST" class=" form-group" style="margin:20px;" action="{{ route('login') }}">
+                          @csrf
+                          <div class="text-center">
+                          <div class="form-group row">
+                              <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                              <div class="col-md-6">
+                                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                  @error('email')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                              <div class="col-md-6">
+                                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+  
+                                  @error('password')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror
+                              </div>
+                          </div>
+                          
+                          <div class="form-group row mb-0">
+                              
+                                  <div class="col-md-8 offset-md-4">
+                                      <button type="submit" class="btn btn-primary">
+                                         Entrar
+                                      </button>
+                                       
+                                      @if (Route::has('password.request'))
+                                          <a class="btn btn-link  border border-secondary" href="{{ route('password.request') }}">
+                                              Olvidaste tu contraseña
+                                          </a>
+                                      @endif 
+                                     
+                                  <div class="form-check">
+                                                      <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                                      <label class="form-check-label" for="remember">Recuerdame
+                                                      </label>
+                                  </div>
+                              </div>
+                              </div>
+                      </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+
+<script>$(document).ready(function () {
+$(".se-pre-con").fadeOut("slow");
+$(".audio")[0].play();
+});</script>
+@yield('menu')

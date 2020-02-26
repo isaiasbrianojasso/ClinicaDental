@@ -15,10 +15,13 @@ class CreateCitasTable extends Migration
     {
         Schema::create('citas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('telefono');
+            $table->integer('telefono')->nullable();
             $table->date('fecha');
-            $table->integer('fechaInicio');
-            $table->integer('notas');
+            $table->date('fechaInicio')->nullable();
+            $table->string('tratamiento');
+            $table->string('email')->nullable();
+            $table->string('registro');
+            $table->integer('notas')->nullable();
             $table->string('nombre');
             $table->timestamps();
         });
